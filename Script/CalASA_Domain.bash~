@@ -1,0 +1,19 @@
+#!/bin/bash 
+
+
+#################################################
+
+targpath=/tjjiang/daiwentao/Database/DockingBenchmark/SingleDomain
+
+for i in `cat /tjjiang/daiwentao/Database/DockingBenchmark/Domain.ID`
+do
+	
+	cp "$targpath"/"$i".ent .
+	./naccess  "$i".ent
+	
+	rm "$i".ent
+	rm "$i".log
+		
+done
+
+#################################################

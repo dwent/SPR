@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+pdbpath=/tjjiang/daiwentao/Database/DockingBenchmark/SingleDomain
+targpath=/tjjiang/daiwentao/Database/DockingBenchmark/Dssp
+
+
+for i in `cat /tjjiang/daiwentao/Database/DockingBenchmark/Domain.ID`
+do
+
+	/tjjiang/wuaiping/Soft/DSSP/dsspcmbi  "$pdbpath"/"$i".ent  "$targpath"/"$i".dssp
+
+done
+

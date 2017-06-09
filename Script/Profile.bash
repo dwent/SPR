@@ -1,0 +1,13 @@
+#!/bin/bash 
+
+dbname=/DATABASE/nr/nr
+
+blast=/Script/blast-2.2.19/bin
+
+fastafile=$1
+outpsi=$fastafile.psi
+	
+$blast/blastpgp -Q $outpsi -j 3 -h 0.001 -d $dbname -i $fastafile -C /tmp/temp.chk1 >& /tmp/temp.blast1
+	
+rm /tmp/temp.chk1
+rm /tmp/temp.blast1

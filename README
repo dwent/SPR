@@ -1,0 +1,50 @@
+SPR: Single domain based Patch Recognition
+
+Free for academic use only. 
+For comercial use, please contact Dr. Wentao Dai.
+
+All rights reserved.
+
+Contact:
+Wentao Dai
+Shanghai Center for Bioinformation Technology（SCBIT)
+1278 Keyuan Rd,Floor 2,Shanghai 201203 China
+TEL：86-21-20283711
+Email:wtdai@scbit.org
+
+The SPR has been tested on Debian and Red Hat Linux.
+
+
+########################
+Install SPR on Linux
+
+Single domain based Patch Recognition(SPR) is provided in binary form for Linux.
+
+1.Compile: g++ -O3 -o SPR1 MainPR.cpp PatchRecog.cpp 
+Usage  : ./SPR1 ./*.ID ./*.asa ./*.fasta ./*.dssp ./*.fasta.psi ./*.sol
+
+2.Install Softwares and configure file pathes in bash scripts as the Script Folder.
+
+########################
+Example
+
+./runExample.sh
+
+#########################
+Manu
+Step1:Generate the Sequence information from structure
+GenSeq.sh(Stru2Seq)
+Step2:Get the secondary structure information
+GenDssp.sh
+Step3:Generate the PSSM profile from nr database
+GenPro1.sh(Profile.bash:depent on the path of non-redundant database)
+Step4:Get the accessibility file(.rsa/.asa)
+CalASA_Domain.sh(naccess)
+Step5:Generate the solvation information from structure
+GenSol.sh(indep/wesol2)
+Step6:Running the SPR
+runExample.sh(SPR)
+
+
+
+

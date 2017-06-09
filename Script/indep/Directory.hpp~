@@ -1,0 +1,13 @@
+#ifndef dirhpp
+#define dirhpp
+#include <string>
+using namespace std;
+#define EXE_PATH /tjjiang/caoyang/Cheer/HA/2008-11-5
+#define LIBP /tjjiang/caoyang/Cheer/HA/2008-11-5/basiclib
+const string pan_para="/tjjiang/caoyang/Cheer/HA/2008-11-5/scoring/implict-solv/pan/sphere2.raw"; 
+const string top_para="/tjjiang/caoyang/Cheer/HA/2008-11-5/basiclib/top_rotamer_amber_h.inp"; 
+const string rot_para="/tjjiang/caoyang/Cheer/HA/2008-11-5/RotamerLibrary/rot.txt"; 
+const string bbdeplib="/tjjiang/caoyang/Cheer/HA/2008-11-5/RotamerLibrary/bbdep02.May.lib"; 
+const string ptcharmm="/tjjiang/caoyang/Cheer/HA/2008-11-5/minicharmm/"; 
+const string vdw_para="/tjjiang/caoyang/Cheer/HA/2008-11-5/basiclib/vdw-radii.dat"; 
+#endif
